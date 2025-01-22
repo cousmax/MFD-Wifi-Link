@@ -1,17 +1,19 @@
+// Thank you Katz for getting me started!!!!!
+// Look at the serial monitor for status
 #include <WiFi.h>
 #include <WiFiUdp.h>
 #include <MAVLink.h>
 #include <mavlink.h>
 #include <HardwareSerial.h>
 
-//TBS
-const char* ssid     = "ExpressLRS TX Backpack 5BFAF3"; // Change this to your WiFi SSID of your crossfire /tango2
-const char* password = "expresslrs"; // NONE!
-const char* host = "10.0.0.1";
+//Wifi Info Fill out as needed
+const char* ssid     = "ExpressLRS TX Backpack 5BFAF3"; // Change this to your WiFi SSID of your device! This is for ELRS Backpack
+const char* password = "expresslrs"; // ELRS Default Password
+const char* host = "10.0.0.1"; // Host of IP
 
 
 //Port
-const int port = 14550;
+const int port = 14550; // Default Port change if needed
 
 
 WiFiUDP Udp;
